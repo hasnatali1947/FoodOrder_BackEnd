@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+/* 
+.div{
+    height: 30vh;
+    width: 30vh;
+    border: 2px solid red;
+    position: relative;
+}
+
+span{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+} */
