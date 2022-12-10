@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 99vh;
+    max-width: 100%;
+    background-image: url(cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.parent{
+    display: flex;
+    position: relative;
+    border: 2px solid;
+    height: 80vh;
+    width: 85vw;
+    border-radius: 10px;
+}
+
+.img1{
+    opacity: 0.5;
+    filter: blur(4px);
+    width: 66%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(main.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerLeft{
+    display: flex;
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    margin-top: 15vh;
+    margin-left: 5vh;
+    background-image: url(star.svg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+.dotsParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 5vh;
+    width: 7vh;
+    border-radius: 50%;
+    border: 1.5px solid;
+    top: -14vh;
+    margin-left: -4vh;
+    box-shadow: 0px 2px 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot1{
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dot2{
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 2px;
+}
+
+.dot3{
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 3px;
+}
+
+
+
+.dotsParent:hover .dot1{
+    animation: animation1 linear infinite 0.5s;
+}
+.dotsParent:hover .dot2{
+    animation: animation2 linear infinite 0.5s;
+}
+.dotsParent:hover .dot3{
+    animation: animation3 linear infinite 0.5s;
+}
+
+
+    @keyframes animation1{
+    0%{
+        transform: translateY(-8px);
+    }   
+    }
+
+    @keyframes animation2{
+    50%{
+        transform: translateY(-8px);
+    }    
+    }
+
+    @keyframes animation3{
+    100%{
+        transform: translatey(-8px);
+    }
+    }
+
+.containerRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 29vw;
+    background-color: hwb(0 36% 63% / 0.952);
+}
+
+.mainImg{
+    position: relative;
+    width: 56vw;
+    height: 80vh;
+    z-index: -1;
+}
+ .spanJacket{
+     font-size: 8vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin-left: -5vh;
+    margin-top: 5vh;
+    opacity: 1; 
+ }
+ .spanStar{
+    display: flex;
+    margin-left: 6vh;
+    height: 80vh;
+    bottom: 15vh;
+    align-items: top;
+    width: 5vh;
+    font-size: x-large;
+
+}
+
+.jacket3{
+    height: 60vh;
+    width: 60vh;
+}
+
+.jacketDiv{
+position: absolute;
+left: 70vh;
+top: 12vh;
+display: none;
+}
+
+.leftArrow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 6vh;
+    border: 1px solid grey;
+    border-radius: 50%;
+    top: 40vh;
+    left: 50vh;
+    font-size: 4vh;
+    color: white;
+    margin-left:-48vh ;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px;
+    
+}
+
+.rightArrow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 6vh;
+    border: 1px solid grey;
+    border-radius: 50%;
+    top: 40vh;
+    right: 1.5%;
+    transform: rotatez(180deg);
+    font-size: 4vh;
+    color: white;
+    /* background-color: rgba(252, 180, 0, 0.5); */
+    cursor: pointer;
+    box-shadow: 0px 1px 3px;
+}
+
+.leftArrow:hover{
+    background-color:  rgba(203, 210, 216, 0.575);
+}
+
+.rightArrow:hover{
+    background-color: rgba(203, 210, 216, 0.575);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 6vh;
+    width: 16vh;
+    border-radius: 20px;
+    margin-top: 7vh;
+    margin-left: 10vh;
+    background-color: rgba(245, 168, 26, 0.897);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 1px 2px 2px;
+    cursor: pointer;
+}
+
+.lineParent{
+    display: table-column;
+    position: relative;
+    align-items: flex-end;
+    bottom: 13vh;
+    height: 13vh;
+    width: 35vh;
+}
+
+.lineChest{
+    position: relative;
+    margin-top: 3.5vh;
+    margin-left: 2vh;
+    width: 33vh;
+    border: rgba(207, 138, 9, 0.596) 0.5px solid;
+    height: -0px;
+}
+
+.chestLineCircle{
+    margin-left: 8vh;
+    margin-top: -1.6vh;
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 2px solid rgb(255, 167, 5);
+    border-radius: 50%;
+    background-color: hwb(0 36% 63% / 0.952);
+}
+
+.spanChest{
+    margin-left: 1.5vh;
+    margin-bottom: -2vh;
+    color: white;
+}
+.span102CM{
+    margin-left: 16vh;
+    margin-bottom: -2vh;
+    color: white;
+}
+
+.sleeveParent{
+    display: flex-end;
+    align-items: center;
+    margin-bottom: 12.5vh;
+    height: 13vh;
+    width: 35vh;
+}
+
+.lineSleeve{
+    position: relative;
+    margin-top: 3.5vh;
+    margin-left: 2vh;
+    width: 33vh;
+    border: rgba(207, 138, 9, 0.596) 0.5px solid;
+    height: -0px;
+}
+
+.sleeveLineCircle{
+    margin-left: 17vh;
+    margin-top: -1.6vh;
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 2px solid rgb(255, 167, 5);
+    border-radius: 50%;
+    background-color: hwb(0 36% 63% / 0.952);
+}
+
+.divparent{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: top;
+    height: 80vh;
+    width: 35vh;
+}
+
+.spanSleeve{
+    font-size: small;
+    margin-bottom: 7vh;
+    color: white;
+    margin-left: 1.5vh;
+}
+.span66{
+    margin-bottom: 7vh;
+    margin-left: 9vh;
+    color: white;
+}
+
+.divSMLXL{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    width: 35vh;
+    margin-top: 4vh;    
+}
+
+.divS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5vh;
+    margin-left: -12.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.divM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.divL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.divXL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.divsizeMark{
+    height: 3.5vh;
+    width: 3.5vh;
+    border: 2px solid rgb(255, 167, 5) ;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s;
+    margin-bottom: 0.3vh;
+    left: -1.4vh;
+    cursor: pointer;
+}
+
+#checkboxS:checked ~ .divsizeMark{ 
+    margin-left: 1vh;
+}
+
+#checkboxM:checked ~ .divsizeMark{
+    margin-left: 5.4vh;
+}
+
+#checkboxL:checked ~ .divsizeMark{
+    margin-left: 9.7vh;
+}
+
+#checkboxXL:checked ~ .divsizeMark{
+    margin-left: 14.2vh;
+    
+}     
+
+#checkboxS{
+    z-index: -1;
+    opacity: -1;
+} 
+#checkboxM{
+    opacity: -1;
+    z-index: -1;
+} 
+#checkboxL{
+    z-index: -1;
+    opacity: -1;
+} 
+#checkboxXL{
+    z-index: -1;
+    opacity: -1;
+} 
+
+#button:checked ~ .button{
+    transform: scale(10px);
+    background-color: rgb(236, 185, 42);
+}
+
+
+.spanSize{
+    margin-bottom: 11vh;
+    margin-left: 1vh;
+    color: white;
+    font-size: 15px;
+}
+
+.divColour{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 20vh;
+    width: 35vh;
+}
+
+.divWhite{
+    display: flex;
+    border: 2px solid white;
+    width: 8vh;
+    margin-left: -17.2vh;
+    margin-top: 10vh;
+    cursor: pointer;
+}
+.divLightGray{
+    display: flex;
+    border: 2px solid rgb(128, 128, 128);
+    width: 8vh;
+    cursor: pointer;
+}
+.divGray{
+    display: flex;
+    border: 2px solid rgb(82, 81, 81);
+    width: 8vh;
+    cursor: pointer;
+}
+.divBlack{
+    display: flex;
+    border: 2px solid black;
+    width: 8vh;
+    cursor: pointer;
+}
+
+.colourMark{
+    position: absolute;
+    border: 1px solid orange;
+    width: 8vh;
+    margin-bottom: 2vh;
+    margin-left: 1.2vh;
+}
+
+#checkboxWhite:checked ~ .colourMark{
+    transition: 0.3s;
+    margin-left: -0.9vh;
+}
+    
+#checkboxWhite{
+    margin-bottom: 10vh;
+    z-index: -1;
+    opacity: 0;
+}
+    
+#checkboxlightGray{
+    margin-bottom: 10vh;
+    z-index: -1;
+    opacity: 0;
+}
+
+#checkboxlightGray:checked ~ .colourMark{
+    transition: 0.3s;
+    margin-left: 7.6vh;
+}
+
+#checkboxGray{
+    margin-bottom: 10vh;
+    z-index: -1;
+    opacity: 0;
+}
+
+#checkboxGray:checked ~ .colourMark{
+    transition: 0.3s;
+    margin-left: 16.4vh; 
+}
+#checkboxBlack{
+    margin-bottom: 10vh;
+    z-index: -1;
+    opacity: 0;
+}
+
+#checkboxBlack:checked ~ .colourMark{
+    transition: 0.3s;
+    margin-left: 24.7vh; 
+}
+
+.spanColour{
+    margin-bottom: 5vh;
+    margin-left: 1vh;
+    color: white;
+    font-size: 15px;
+}
+
+/* -----------Shayan code------------------ */
+
+.jacketDiv{
+    pointer-events: none;
+}
+
+.parent{
+    overflow: hidden;
+}
+
+.selectedJacket{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border: 2px solid black;
+    max-width: 200px;
+    width: 200px;
+    height: 100px;
+    max-height: 100px;
+    display: none;
+    background-color: white;
+    z-index: 3;
+    border-radius: 5px;
+}
+/* 
+/* @media (max-width:640px){
+    .parent{
+        flex-direction: column;
+    }
+} */ */
