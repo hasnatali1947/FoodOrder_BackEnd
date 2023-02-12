@@ -172,11 +172,10 @@
 // }
 // console.log(lastnumber());
  
- 
-// let array = [2,1,3,77,5,4]
+// let array = [3,1,3,77,5,9]
 // let array2 = []
 // function firstlast(array , array2){
-//    array2.push(array[0] , array[array.length -1])
+//    array2 = [array[0] , array[array.length -1]]
 //    return array2 
 // }
 // console.log(firstlast(array , array2));

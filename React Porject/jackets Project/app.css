@@ -1,0 +1,440 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    box-shadow: 1px 1px 3px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid;
+    height: 90vh;
+    width: 165vh;
+    border-radius: 2px 2px 3px;
+}
+
+.div-image{
+    display: flex;
+    margin-left: -65vh;
+}
+
+.image-main{
+    height: 90vh;
+    width:100vh ;
+    background-position:center;
+    background-size: cover;   
+}
+
+.span1{
+    position: absolute;
+    top: 16vh;
+    font-size: x-large;
+    left: 10vh;
+}
+
+.h1{
+    position: absolute;
+    top: 20vh;
+    left: 10vh;
+    font-size: 5vh;
+}
+
+.JACKET{
+    top: 26vh;
+}
+
+.ResultButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    top: -17vh;
+    left: 0vh;
+    border-radius: 50%;
+    transition: 0.3s linear infinite ;
+    cursor: pointer;
+    border: 2px solid rgb(202, 196, 196);
+}
+
+.dot{
+    height: 5px;
+    transition: 0.3s;
+    margin: 1px;
+    width: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(202, 196, 196);
+    cursor: pointer;
+    background-color: white;
+}
+
+.ResultButton:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.ResultButton:hover .dot1{
+    animation: animation1 linear infinite 0.5s;
+}
+
+.ResultButton:hover .dot2{
+    animation: animation2 linear infinite 0.5s;
+}
+
+.ResultButton:hover .dot3{
+    animation: animation3 linear infinite 0.5s;
+}
+
+@keyframes animation1{
+    0%{
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes animation2{
+    50%{
+        transform: translateY(-8px);
+    }
+}
+@keyframes animation3{
+    100%{
+        transform: translateY(-8px);
+    }
+}
+
+.div-right{
+    position: absolute;
+    right: 11vh;
+    width: 55vh;
+    justify-content: start;
+    align-items: top;
+    height: 90vh;
+}
+
+.colour{
+    margin-top: 4vh;
+    margin-left: 12vh;
+    align-items: top;
+}
+
+.colour-mark{
+    position: relative;
+    width: 40vh;
+    margin-left: -8vh;
+    display: flex;
+    margin-left: 12vh;
+    margin-top: 4vh;
+}
+
+.white{
+    left: 0px;
+    cursor: pointer;
+    border: 2px solid;
+    width: 8vh;
+    height: 1px;
+    background-color: white;
+}
+
+.gray{
+    left: 63px;
+    cursor: pointer;
+    border: 2px solid;
+    width: 8vh;
+    height: 1px;
+    background-color: rgb(160, 141, 141);
+    border-color: rgb(160, 141, 141);
+}
+
+.dark-gray{
+    left: 126px;
+    cursor: pointer;
+    border: 2px solid;
+    width: 8vh;
+    height: 1px;
+    background-color: rgb(172, 152, 152);
+}
+
+.black{
+    left: 189px;
+    cursor: pointer;
+    border: 2px solid;
+    width: 8vh;
+    height: 1px;
+    background-color: black;
+}
+
+.colour-show{
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    width: 8vh;
+    height: 1px;
+    border: 1px solid  #fab726;
+    margin-top: -2vh;
+    background-color:#fab726 ;
+}
+
+.colour-div{
+    margin-top: 13vh;
+    align-items: center;
+    height: 10vh;
+    width: 50vh;
+}
+
+.size-div{
+    margin-top: 1.5vh;
+    margin-left: 12vh;
+    height: 10vh;
+    width: 30vh;
+}
+
+.sizes{
+    display: flex;
+    margin-top: 2vh;
+    width: 30vh;
+}
+
+.S{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+}
+
+.M{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    margin-left: 1vh;
+}
+
+.L{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    margin-left: 1vh;
+}
+
+.XL{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    margin-left: 1vh;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    transition: 0.3s ease-in-out;
+}
+
+.sleeve{
+    margin-top: 1.5vh;
+    height: 10vh;
+    width: 35vh;
+    margin-left: 12vh;
+}
+
+.sleeve44{
+    margin-left: 8vh;
+}
+
+.sleeveRange{
+    width: 35vh;
+}
+
+.chest{
+    margin-top: 1.5vh;
+    height: 10vh;
+    width: 35vh;
+    margin-left: 12vh;
+}
+
+.chest66{
+    margin-left: 19vh;
+}
+
+.chestRange{
+    width: 35vh;
+    margin-right: 14vh;
+}
+
+.CLICK{
+    margin-left: 23vh;
+    height: 5vh;
+    width: 14vh;
+    border-radius: 8px;
+    background-color: #fab726;
+    border: 2px solid #fab726;
+    box-shadow: 2px 2px 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.CLICK:hover{
+    scale: 0.95;
+}
+
+.jactketimages{
+    top: 18vh;
+    height: 40vh;
+    margin-left: 1vh;
+    position: absolute;
+}
+
+.buttonLeft{
+    top: 50%;
+    left: 2vh;
+    position: absolute;
+    height: 4vh;
+    width: 7vh;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.buttonLeft:hover{
+    scale: 0.99;
+}
+
+.buttonRight{
+    position: absolute;
+    top: 50%;
+    right: 2vh;
+    height: 4vh;
+    width: 7vh;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 17px;
+}
+
+.buttonRight:hover{
+    scale: 0.99;
+}
+.sliderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 165vh;
+}
+ 
+.jacketDetail{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 17vh;
+    width: 22vh;
+    top: -17vh;
+    left: 6vh;
+    transition: 0.3s;
+    background-color: #f8af10e9;
+    border-radius: 1px 8px 8px 8px;
+    box-shadow: 0px 1px 2px;
+    color: rgb(252, 232, 232);
+    font-size: large;
+} 
+
+.sizes {
+    position: relative;
+  }
+  
+.point{
+    height: 8px;
+    width: 8px;
+    border: 2px solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3vh;
+    bottom: -22vh;
+}  
+
+.point3{
+    margin-left:3vh ;
+}
+
+.point1{
+    margin-left: -3vh;
+}
+
+.colourChange{
+    background-color: rgb(51, 3, 244);
+}
+
+.div{
+    bottom: -20vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+    font-size: 66px;
+    cursor: pointer;
+}
+
+.imgDots{
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8px;
+    background-color: black;
+    width: 8px;
+    border: 2px solid ;
+    overflow: hidden;
+}
+
+.imgDots:active{
+    background-color: aliceblue;
+}
+
+.small{
+   margin: 0px ; 
+}
+
+.medium{
+    margin-left:27px ;
+}
+
+.large{
+    margin-left: 55px ;
+}
+
+.extra-large{
+    margin-left: 86px;
+}

@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* --------- Popup styling */
+
+.popup{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    height: 60%;
+    border-radius: 10px;
+    background-color: rgba(24, 20, 31, 0.95);
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+h2,span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: rgb(255, 34, 0);
+}
+.send{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+/* ------------------------- Simple styling */
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right ,rgb(32, 30, 35),rgb(41, 38, 46));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    /* width: 50%; */
+    height: 50%;
+    border-radius: 10px;
+    background-image: linear-gradient(to left ,rgb(32, 30, 35),rgb(46, 43, 52));
+}
+
+
+input{
+    width: 200px;
+    height: 10px;
+    padding: 10px;
+    outline: none;
+    margin: 5px;
+    border-radius: 10px;
+    background-color:rgb(34, 31, 37) ;
+    border: 2px solid rgb(70, 169, 255) ;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+input:focus{
+    border: 2px solid rgb(0, 120, 225);
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(70, 169, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+button:hover{
+    transform: scale(0.95);
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasnat Ali</title>
+    <link rel="stylesheet" href="hasnat.css">
+</head>
+<body>
+    <div class="form">
+        <input id="email" type="text" placeholder="Email@email.com" >
+        <input id="pass" type="text" placeholder="Password***" >
+        <Button onclick="confirm()" >CONFIRM</Button>
+    </div>
+    <div class="popup" id="popup" >
+        <button onclick="closed()" class="close"  >CLOSE</button>
+        <div class="information">
+            <h2>
+                Your Information
+            </h2>
+            <span>Email : </span> <span id="emailText" ></span> <br>
+            <span>Password : </span> <span id="passwordText" ></span>
+            
+        </div>
+        <button class="send" onclick="send()" >SEND</button>
+    </div>
+</body>
+<script src="hasnat.js" ></script>
+</html>

@@ -1,0 +1,52 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(to right ,rgb(32, 30, 35),rgb(41, 38, 46));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+h1{
+    border: 2px solid;
+}
+
+.advice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height: 20vh;
+    width: 100vh;
+    box-shadow: 2px 2px 3px;
+}
+
+button{
+    height: 6vh;
+    width: 15vh;
+    background-color: rgba(6, 80, 242, 0.842);
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    right: 47%;
+    border-radius: 5px;
+    margin-top: 4vh;
+    border: none;
+    box-shadow: 2px 2px 3px;
+}
+
+button:hover{
+    scale: 0.97;
+}
+
+button:active{
+    color: rgb(234, 227, 214);
+}

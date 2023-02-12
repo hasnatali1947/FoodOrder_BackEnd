@@ -1,0 +1,86 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.divcontainer { 
+    height: 37vh;
+    width: 50vh;
+    background-color: rgba(12, 12, 117, 0.861); 
+    color: white;
+    border-radius: 10px;  
+}
+
+.QuestionText {
+    margin: 3vh;
+}
+
+.Options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color:rgba(12, 12, 117, 0.861) ;
+    border: blue;
+    height: 4vh;
+    width: 15vh;
+    cursor: pointer;
+    margin: 1vh;
+    margin-left: 25vh;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.Options:hover{
+    scale: 0.95;
+    color: rgba(12, 12, 117, 0.861) ;
+    background-color:white;
+}
+
+.score{
+    height: 37vh;
+    width: 50vh;
+    background-color: rgba(12, 12, 117, 0.861); 
+    color: white;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.question{
+    margin-left: 1vh;
+    font-size: larger;
+}
+
+.questionnumber{
+    margin-left: 1vh;
+    font-size: larger;
+}
+
+.h3Percentage{
+    position: absolute;
+    margin-top: -10vh;
+}
+
+.TRYAGAIN{
+    color: white;
+    background-color: rgba(216, 19, 19, 0.906);
+    border: rgba(216, 19, 19, 0.906) ;
+    border-radius: 5px;
+    height: 5vh;
+    position: absolute;
+    margin-top: 15vh;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0.5px 2px;
+}
+
+.TRYAGAIN:hover{
+    scale: 0.95;
+}

@@ -1,0 +1,68 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img{
+    background: url(cover.jpg);
+    background-position: center;
+    background-image: cover;
+    width: 100vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.WeatherApp{
+    color: white;
+}
+
+.Input{
+    margin: 1rem;
+    height: 3.3vh;
+    width: 15rem;
+    font-size: large;
+}
+
+.Button{
+    height: 3.5vh;
+    width: 15rem;
+    color: white;
+    background-color: rgba(31, 31, 223, 0.893);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Button:hover{
+    scale: 0.98;
+}
+.Button:active{
+    color: black;
+}
+
+.weaterResultBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    box-shadow: 2px 2px 3px;
+}
+
+h5{
+
+    color: black;
+}

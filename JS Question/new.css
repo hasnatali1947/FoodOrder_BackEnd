@@ -3,9 +3,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
 }
 
-#h2{
-    display: flex;
+#span50{
+    position: absolute;
+    top: 40vh;
+    font-size: larger;
 }
