@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+}
+
+button{
+    height: 7vh;
+    width: 12vh;
+    cursor: pointer;
+}
+
+input{
+    height: 6.5vh;
+    width: 32vh;
+    font-size: larger;
+}
